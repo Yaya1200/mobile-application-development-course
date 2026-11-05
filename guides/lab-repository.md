@@ -29,8 +29,10 @@ changes, plus the files the lab's "Submit" section asks for
 
 ## Once, in week 1
 
-1. Create a **private** repository named as above on GitHub, with no
-   README, no `.gitignore` and no licence.
+1. Create a **private** repository named as above on GitHub, and tick
+   **Add a README file**, so that the repository starts on the branch
+   `main`. Add no licence. You replace that README with the template in
+   step 3.
 2. Clone it **next to** your clone of the course repository, so both are
    in the same parent folder:
 
@@ -46,7 +48,8 @@ changes, plus the files the lab's "Submit" section asks for
    ```
 
 3. Copy `labs-template/README.md` and `labs-template/.gitignore` from the
-   course repository into your lab repository. In `README.md`, write your
+   course repository into your lab repository (replace the README that
+   GitHub made). In `README.md`, write your
    full name and your student ID in the form `UGR/1234/16`.
 4. Set your name and e-mail for this repository, and make the first commit:
 
@@ -56,7 +59,7 @@ changes, plus the files the lab's "Submit" section asks for
    git config user.email "the e-mail of your GitHub account"
    git add README.md .gitignore
    git commit -m "chore: add README and .gitignore"
-   git push -u origin main
+   git push
    ```
 
 5. On GitHub, *Settings → Collaborators*: add the instructor
