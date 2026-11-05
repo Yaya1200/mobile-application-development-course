@@ -61,6 +61,16 @@ chore(deps): upgrade drift to 2.31
 
 Types: `feat`, `fix`, `refactor`, `test`, `docs`, `chore`, `style`.
 
+**Lab commits** use the week as the scope and name the task first, so
+that `tool/check_lab_commits.dart` can find one commit for each task
+(see [lab-repository.md](lab-repository.md)):
+
+```
+feat(week05): task 3 move the counter into a Notifier
+test(week06): task 2 add the failing tests for Notes.duplicate
+docs(week05): predictions and AI note
+```
+
 A good message says **what changed**, and the body says **why** when it
 is not obvious. "fix stuff", "update", "asdf" tell a reviewer — and you,
 in three weeks — nothing.

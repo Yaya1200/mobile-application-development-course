@@ -74,18 +74,31 @@ installation error means.
 **Self-check 1 (Minimum):** `flutter --version` prints 3.47.7 and
 `flutter doctor` shows ✓ for Flutter and Chrome. Show your neighbour.
 
+**Your lab repository (Minimum).** All your labs go in one private
+GitHub repository of your own, named after your student ID:
+`UGR/1234/16` becomes `mad-labs-UGR-1234-16`. Follow "Once, in week 1"
+in `guides/lab-repository.md`: create the repository, clone it next to
+the course repository, add `README.md` with your student ID, and add the
+instructor and your TA as collaborators. From now on, commit at least
+once after each task, with the week and the task in the message.
+
 ### Task 2 — Hello World and hot reload
 
 **AI-use level:** 0 — No AI.
 
-1. Open `lab/starter/` in your editor. This is a `flutter create --empty`
-   project already named `campus_companion`.
-2. Run it (every `cd` in this course starts from the repository root):
+1. Copy the starter into your lab repository and run it. Every `cd` in
+   this course starts from the root of the course repository:
    ```bash
-   cd weeks/week01-intro-dart/lab/starter
+   dart tool/start_lab.dart 01 ../mad-labs-UGR-XXXX-YY   # copies lab/starter/ to week01/ and commits it
+   cd ../mad-labs-UGR-XXXX-YY/week01
+   flutter --version > flutter-version.txt
+   git add flutter-version.txt
+   git commit -m "chore(week01): task 1 record the Flutter version"
    flutter pub get
    flutter run -d chrome          # or: flutter devices, then -d <id>
    ```
+2. Open `week01/` in your editor. This is a `flutter create --empty`
+   project already named `campus_companion`.
 3. Copy this table into a file `predictions.md`. Fill in the
    **Prediction** column for all three rows **before** you try anything.
 
@@ -270,8 +283,14 @@ Add a file `AI_NOTE.md` with three lines. The TA reads it at Checkpoint B.
 
 ## Submit
 
-Lab work is individual. Groups are formed in week 2, so for now push your
-`lab/starter/` work, `predictions.md` and `AI_NOTE.md` to your own GitHub
-repository under `week01/`. From week 2, keep your labs in
-`labs/<your-name>/weekNN/` of your group's repository, and move this week's
-folder there too.
+Lab work is individual. Push your lab work, `flutter-version.txt`,
+`predictions.md` and `AI_NOTE.md` to `week01/` of your lab repository
+(see `guides/lab-repository.md`) by the start of the next lab.
+
+Make at least one commit for each required task, with the week and the
+task in the message, for example `feat(week01): task 3 add the
+CampusCompanionApp shell`, and push. Before the deadline, run
+`dart tool/check_lab_commits.dart ../mad-labs-UGR-XXXX-YY 01` from the
+root of the course repository. Your work is collected from GitHub at the
+start of the next lab. A required task without a commit costs 1 of the
+10 rubric points.

@@ -50,6 +50,7 @@ Cross-cutting references used throughout the course:
 | [ai-assisted-development.md](guides/ai-assisted-development.md) | using AI assistants, and building AI features |
 | [code-review-checklist.md](guides/code-review-checklist.md) | for pull requests and before submitting |
 | [git-workflow.md](guides/git-workflow.md) | branches, commits, pull requests, tags |
+| [lab-repository.md](guides/lab-repository.md) | your private lab repository and one commit per lab task |
 | [troubleshooting.md](guides/troubleshooting.md) | the errors you will meet, with fixes |
 | [glossary.md](guides/glossary.md) | the key terms of every week, in alphabetical order |
 | [resources.md](guides/resources.md) | the reference list, annotated by week |
@@ -68,10 +69,14 @@ Cross-cutting references used throughout the course:
    flutter run -d chrome        # or an emulator / device
    flutter test
    ```
-3. Each week: read `weeks/weekNN-*/README.md` before class, open the slides,
-   then do the lab from `weeks/weekNN-*/lab/README.md` starting in
-   `lab/starter/`. Each week's material appears just before its lecture,
-   its starter before the lab, and its `lab/solution/` after the lab week. The complete example app
+3. Create your private lab repository, `mad-labs-UGR-XXXX-YY`, as in
+   [lab-repository.md](guides/lab-repository.md).
+4. Each week: read `weeks/weekNN-*/README.md` before class, open the slides,
+   then do the lab from `weeks/weekNN-*/lab/README.md`: copy `lab/starter/`
+   into your lab repository with `dart tool/start_lab.dart NN
+   ../mad-labs-UGR-XXXX-YY` and commit after each task. Each week's
+   material appears just before its lecture, its starter before the lab,
+   and its `lab/solution/` after the lab week. The complete example app
    (`capstone/`) appears after week 14.
 
 ## Repository layout
@@ -83,9 +88,10 @@ capstone/     Campus Companion — the running example app, latest state (releas
 backend/      Dart shelf REST API used from week 9
 weeks/week10-firebase/firebase/   Firestore and Storage rules, emulator config, rules tests
 project/      group-project kit: proposal template, milestones, rubric
-guides/       cross-cutting references: architecture, testing, AI use, troubleshooting
+guides/       cross-cutting references: architecture, testing, AI use, troubleshooting, lab repository
+labs-template/  README.md and .gitignore to copy into your own lab repository
 site/         Pages theme, landing template and build script
-tool/         repository checks
+tool/         repository checks; start_lab.dart and check_lab_commits.dart for your labs
 ```
 
 ## Contributing

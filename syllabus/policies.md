@@ -5,8 +5,16 @@
 Labs are where you learn. Attendance at labs is expected.
 
 - **Lab work is individual.** You may help each other, but each of you
-  writes and submits your own lab, in your own folder
-  `labs/<your-name>/weekNN/` of the group repository.
+  writes and submits your own lab, in your own private lab repository
+  `mad-labs-UGR-XXXX-YY` (your student ID with `-` in place of `/`), one
+  folder `weekNN/` per lab. The instructor and your TA are collaborators
+  on it. See `guides/lab-repository.md`.
+- **At least one commit per task.** After each required task of a lab,
+  commit with the week and the task in the message, for example
+  `feat(week05): task 3 move the counter into a Notifier`, and push.
+  Your lab is collected from GitHub at the start of the next lab; the
+  date of a commit does not count, only what is on GitHub. A required
+  task without a commit costs 1 of the lab's 10 rubric points.
 - **Two TA-signed checkpoints per lab** (one in weeks 7 and 11, when
   TAs hold the milestone oral checks). At each one the TA records one of
   three levels — *Not yet*, *Working*, or *Can explain and change it* —

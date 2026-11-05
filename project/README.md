@@ -43,9 +43,9 @@ repository is private.
   Git tag (`m1`, `m2`, `final`) plus a short `MILESTONE.md` in the
   repository root describing what was done and by whom (see
   [milestones.md](milestones.md)).
-- **Labs**: each member keeps their own lab work in
-  `labs/<your-name>/weekNN/` of the group repository. Lab work is
-  individual.
+- **Labs** are not part of the group repository. Lab work is
+  individual: each member keeps it in their own private lab repository
+  (see `guides/lab-repository.md`).
 
 ## What a passing final submission contains
 

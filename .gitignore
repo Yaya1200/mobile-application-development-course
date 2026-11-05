@@ -41,3 +41,7 @@ review/
 # Golden test failure output (written by flutter test)
 **/goldens/failures/
 **/test/exercises/failures/
+
+# Lab-repository roster: personal data, never committed
+instructor/lab-repos.csv
+instructor/lab-snapshots/

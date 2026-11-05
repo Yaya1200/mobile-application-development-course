@@ -41,7 +41,8 @@ code, and you decide yourself where a Settings screen goes.
 ## Setup
 
 ```bash
-cd weeks/week04-navigation/lab/starter
+dart tool/start_lab.dart 04 ../mad-labs-UGR-XXXX-YY   # once: copies the starter into your lab repository
+cd ../mad-labs-UGR-XXXX-YY/week04
 flutter pub get                 # go_router is already declared; or: flutter pub get --offline
 flutter analyze --fatal-infos   # clean before you start
 flutter test                    # many tests fail until the lab is done
@@ -495,7 +496,14 @@ Add a file `REFLECTION.md` with two lines. Write it alone.
 
 ## Submit
 
-Lab work is individual. Push your `lab/starter/` work, `predictions.md`,
-`DECISIONS.md`, `AI_NOTE.md` and `REFLECTION.md` to
-`labs/<your-name>/week04/` of your group's repository by the start of the
-next lab.
+Lab work is individual. Push your lab work, `predictions.md`,
+`DECISIONS.md`, `AI_NOTE.md` and `REFLECTION.md` to `week04/` of your
+lab repository by the start of the next lab.
+
+Make at least one commit for each required task, with the week and the
+task in the message, for example `feat(week04): task 2 <what changed>`,
+and push. Before the deadline, run `dart tool/check_lab_commits.dart
+../mad-labs-UGR-XXXX-YY 04` from the root of the course repository. Your
+work is collected from GitHub at the start of the next lab. A required
+task without a commit costs 1 of the 10 rubric points (see
+`guides/lab-repository.md`).

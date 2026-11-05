@@ -24,7 +24,7 @@ them.
 
 - **backend-as-a-service (BaaS)** — A service that gives an app accounts, a database and file storage without a server of your own. (week 10)
 - **boundary** — The value where a rule changes, such as `max` in "from 1 to `max`"; test the boundary and the value just past it. (week 6)
-- **branch** — One section of a `StatefulShellRoute`, with its own navigator and back stack (not a Git branch). (week 4)
+- **branch** — One section of a `StatefulShellRoute`, with its own navigator and back stack (not a Git branch). ([week 4](../weeks/week04-navigation/README.md#key-terms))
 - **breakpoint** — The width at which a layout changes, for example from a list to a grid at 600 pixels. ([week 3](../weeks/week03-layout/README.md#key-terms))
 
 ## C
@@ -46,7 +46,7 @@ them.
 ## D
 
 - **data-safety form** — The store's questions about what the app collects, why, where it is stored and how to delete it; the answers must match the code. (week 14)
-- **deep link** — An address that opens a screen inside the app directly, for example from a browser, an email or a QR code. (week 4)
+- **deep link** — An address that opens a screen inside the app directly, for example from a browser, an email or a QR code. ([week 4](../weeks/week04-navigation/README.md#key-terms))
 - **default value** — The value a read returns when nothing is stored yet. (week 8)
 - **denormalise** — Store a copy of a value (such as the author's name) in each document that shows it, so a list needs no second read. (week 10)
 - **dependency rule** — Presentation depends on data, data depends on domain, never the other way round. (week 5)
@@ -68,7 +68,7 @@ them.
 - **endpoint** — One path and method of an API, such as `GET /events/{id}`. (week 9)
 - **enhanced enum** — An enum whose values have fields and a constructor. ([week 2](../weeks/week02-dart-widgets/README.md#key-terms))
 - **ephemeral state** — State that only one widget needs, such as the text in a field; it stays in the widget, with `setState`. (week 5)
-- **error page** — The page the router shows for an address that matches no route. (week 4)
+- **error page** — The page the router shows for an address that matches no route. ([week 4](../weeks/week04-navigation/README.md#key-terms))
 - **extension method** — A method added to an existing type with `extension ... on`. ([week 2](../weeks/week02-dart-widgets/README.md#key-terms))
 
 ## F
@@ -158,8 +158,8 @@ them.
 
 ## N
 
-- **named route** — A route chosen by a name such as `/events`, looked up in `MaterialApp.routes` or built by `onGenerateRoute`. (week 4)
-- **navigator** — The widget that holds a stack of routes and shows the top one. (week 4)
+- **named route** — A route chosen by a name such as `/events`, looked up in `MaterialApp.routes` or built by `onGenerateRoute`. ([week 4](../weeks/week04-navigation/README.md#key-terms))
+- **navigator** — The widget that holds a stack of routes and shows the top one. ([week 4](../weeks/week04-navigation/README.md#key-terms))
 - **notifier** — A class that holds a provider's state and has the methods that replace it. (week 5)
 - **null safety** — A variable can hold `null` only if its type ends in `?`. ([week 1](../weeks/week01-intro-dart/README.md#key-terms))
 
@@ -176,7 +176,7 @@ them.
 
 - **pagination** — Getting a long list in pages, with `page` and `limit`, until `total` items have arrived. (week 9)
 - **`part` file** — A file joined to another file so that both form one library and can use each other's private names. (week 5)
-- **path parameter** — A part of the path that changes, such as the `42` in `/events/42`, written `:id` in a `go_router` path. (week 4)
+- **path parameter** — A part of the path that changes, such as the `42` in `/events/42`, written `:id` in a `go_router` path. ([week 4](../weeks/week04-navigation/README.md#key-terms))
 - **pending write** — A write that is on the phone but not yet confirmed by the server. (week 10)
 - **permanently denied** — The user chose "don't ask again"; a new request shows no dialog, and only the system settings can change it. (week 11)
 - **permission** — The user's consent for an app to use protected data or hardware, such as the camera or location. (week 11)
@@ -191,12 +191,12 @@ them.
 - **provider** — A global value that tells Riverpod how to create a piece of state and lets widgets and tests find it. (week 5)
 - **`ProviderScope`** — The widget at the root of the app that stores the state of every provider. (week 5)
 - **pump** — Telling the test renderer to build the next frame. (week 6)
-- **push / pop** — Put a route on top of the stack / remove the top route. (week 4)
+- **push / pop** — Put a route on top of the stack / remove the top route. ([week 4](../weeks/week04-navigation/README.md#key-terms))
 
 ## Q
 
 - **query** — A statement that reads or changes rows: select, insert, update or delete. (week 8)
-- **query parameter** — A `name=value` pair after the `?` in an address. (week 4)
+- **query parameter** — A `name=value` pair after the `?` in an address. ([week 4](../weeks/week04-navigation/README.md#key-terms))
 
 ## R
 
@@ -210,10 +210,10 @@ them.
 - **`resource.data`** — The document as it is stored now. (week 10)
 - **responsive layout** — A layout that changes with the space it has. ([week 3](../weeks/week03-layout/README.md#key-terms))
 - **restart (in a test)** — Building the app again with a new `ProviderScope`, so that every provider is created again and reads from storage. (week 12)
-- **result** — The value a page returns with `pop(value)` to the code that pushed it and is waiting with `await`. (week 4)
+- **result** — The value a page returns with `pop(value)` to the code that pushed it and is waiting with `await`. ([week 4](../weeks/week04-navigation/README.md#key-terms))
 - **ripple (ink splash)** — The spreading highlight that `InkWell` and `InkResponse` paint on a `Material` when touched. (week 7)
-- **root navigator** — The navigator at the top of the app, above the shell; a route on it covers the bottom bar. (week 4)
-- **route** — One page on a navigator's stack, together with its transition. (week 4)
+- **root navigator** — The navigator at the top of the app, above the shell; a route on it covers the bottom bar. ([week 4](../weeks/week04-navigation/README.md#key-terms))
+- **route** — One page on a navigator's stack, together with its transition. ([week 4](../weeks/week04-navigation/README.md#key-terms))
 - **run-time permission** — A permission that Android asks for in a dialog while the app runs, not at installation. (week 11)
 
 ## S
@@ -229,7 +229,7 @@ them.
 - **serialisation** — Turning an object into text or bytes that can be stored or sent, and back. (week 8)
 - **`setState`** — Tells Flutter that the `State` changed, so `build()` runs again. ([week 2](../weeks/week02-dart-widgets/README.md#key-terms))
 - **severity** — How much a problem stops a user: blocks use, makes use harder, or minor. (week 14)
-- **shell** — The frame that stays on screen around several sections, here the app bar, the drawer and the bottom bar. (week 4)
+- **shell** — The frame that stays on screen around several sections, here the app bar, the drawer and the bottom bar. ([week 4](../weeks/week04-navigation/README.md#key-terms))
 - **sideloading** — Installing an APK directly, not from a store, after allowing "install unknown apps". (week 14)
 - **silent replacement** — Changing the user's own text to the model's output without the user choosing it. (week 13)
 - **snapshot** — The state of a future that `FutureBuilder` passes to its builder: waiting, with data, or with an error. (week 8)

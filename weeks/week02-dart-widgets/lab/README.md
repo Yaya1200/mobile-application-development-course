@@ -34,7 +34,8 @@ futures that pass their tests.
 ## Setup
 
 ```bash
-cd weeks/week02-dart-widgets/lab/starter
+dart tool/start_lab.dart 02 ../mad-labs-UGR-XXXX-YY   # once: copies the starter into your lab repository
+cd ../mad-labs-UGR-XXXX-YY/week02
 flutter pub get                 # or: flutter pub get --offline
 flutter analyze --fatal-infos   # clean before you start
 flutter test                    # many tests fail until the lab is done
@@ -308,9 +309,17 @@ Add a file `AI_NOTE.md` with three lines. The TA reads it at Checkpoint B.
 
 ## Submit
 
-Lab work is individual. Push your `lab/starter/` work, `predictions.md`,
-`lifecycle.md` and `AI_NOTE.md` to `labs/<your-name>/week02/` of your
-group's repository by the start of the next lab. Groups of four must be
-registered by the end of week 2: a `project.yaml` in the group's
-repository and its link in the registration form (see "Registration and
-submission" in `project/README.md`).
+Lab work is individual. Push your lab work, `predictions.md`,
+`lifecycle.md` and `AI_NOTE.md` to `week02/` of your lab repository by
+the start of the next lab. Groups of four must be registered by the end
+of week 2: a `project.yaml` in the group's repository and its link in
+the registration form (see "Registration and submission" in
+`project/README.md`).
+
+Make at least one commit for each required task, with the week and the
+task in the message, for example `feat(week02): task 2 <what changed>`,
+and push. Before the deadline, run `dart tool/check_lab_commits.dart
+../mad-labs-UGR-XXXX-YY 02` from the root of the course repository. Your
+work is collected from GitHub at the start of the next lab. A required
+task without a commit costs 1 of the 10 rubric points (see
+`guides/lab-repository.md`).
