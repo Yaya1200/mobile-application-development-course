@@ -61,37 +61,46 @@ Cross-cutting references used throughout the course:
    https://docs.flutter.dev/install. Confirm with
    `flutter --version`. If you use [fvm](https://fvm.app), the repo pins the
    version in `.fvmrc`; `fvm install` picks it up.
-2. Clone this repository and run the week 1 starter:
+2. Clone this repository. You read the course material here and run the
+   tools from its root, but you do not change it, so `git pull` always
+   works:
    ```bash
    git clone https://github.com/betsegawlemma/mobile-application-development-course.git
-   cd mobile-application-development-course/weeks/week01-intro-dart/lab/starter
+   ```
+3. Create your private lab repository, `mad-labs-UGR-XXXX-YY` (your
+   student ID with `-` in place of `/`), next to the course repository, as
+   in [lab-repository.md](guides/lab-repository.md).
+4. Each week: read `weeks/weekNN-*/README.md` before class and open the
+   slides. For the lab, copy the starter into your lab repository and
+   work there, following `weeks/weekNN-*/lab/README.md`:
+   ```bash
+   cd mobile-application-development-course
+   git pull
+   dart tool/start_lab.dart 01 ../mad-labs-UGR-XXXX-YY   # copies the starter to week01/ and commits it
+   cd ../mad-labs-UGR-XXXX-YY/week01
    flutter pub get              # no network: see lab 1, "Without internet"
    flutter run -d chrome        # or an emulator / device
-   flutter test
    ```
-3. Create your private lab repository, `mad-labs-UGR-XXXX-YY`, as in
-   [lab-repository.md](guides/lab-repository.md).
-4. Each week: read `weeks/weekNN-*/README.md` before class, open the slides,
-   then do the lab from `weeks/weekNN-*/lab/README.md`: copy `lab/starter/`
-   into your lab repository with `dart tool/start_lab.dart NN
-   ../mad-labs-UGR-XXXX-YY` and commit after each task. Each week's
-   material appears just before its lecture, its starter before the lab,
-   and its `lab/solution/` after the lab week. The complete example app
-   (`capstone/`) appears after week 14.
+   Commit at least once after each task, for example
+   `git commit -m "feat(week01): task 3 add the CampusCompanionApp shell"`,
+   and push.
+5. Each week's material appears just before its lecture, its starter
+   before the lab, and its `lab/solution/` after the lab week. The
+   complete example app (`capstone/`) appears after week 14.
 
 ## Repository layout
 
 ```
-syllabus/     syllabus, schedule, policies (incl. AI-use policy), coverage matrix
-weeks/        one folder per week: README (notes), slides.md (Marp), lab/, quiz.md
-capstone/     Campus Companion — the running example app, latest state (released after week 14)
-backend/      Dart shelf REST API used from week 9
+syllabus/        syllabus, schedule, policies (incl. AI-use policy), coverage matrix
+weeks/           one folder per week: README (notes), slides.md (Marp), lab/, quiz.md
+capstone/        Campus Companion — the running example app, latest state (released after week 14)
+backend/         Dart shelf REST API used from week 9
 weeks/week10-firebase/firebase/   Firestore and Storage rules, emulator config, rules tests
-project/      group-project kit: proposal template, milestones, rubric
-guides/       cross-cutting references: architecture, testing, AI use, troubleshooting, lab repository
-labs-template/  README.md and .gitignore to copy into your own lab repository
-site/         Pages theme, landing template and build script
-tool/         repository checks; start_lab.dart and check_lab_commits.dart for your labs
+project/         group-project kit: proposal template, milestones, rubric
+guides/          cross-cutting references: architecture, testing, AI use, troubleshooting, lab repository
+labs-template/   README.md and .gitignore to copy into your own lab repository
+site/            Pages theme, landing template and build script
+tool/            repository checks; start_lab.dart and check_lab_commits.dart for your labs
 ```
 
 ## Contributing
