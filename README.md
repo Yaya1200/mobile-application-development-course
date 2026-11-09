@@ -27,7 +27,7 @@ its lecture.
 | 2 | Dart II; widget lifecycle | [notes](weeks/week02-dart-widgets/README.md) · [slides](https://betsegawlemma.github.io/mobile-application-development-course/week02/) · [lab](weeks/week02-dart-widgets/lab/README.md) · [quiz](weeks/week02-dart-widgets/quiz.md) |
 | 3 | Layout and common widgets | [notes](weeks/week03-layout/README.md) · [slides](https://betsegawlemma.github.io/mobile-application-development-course/week03/) · [lab](weeks/week03-layout/lab/README.md) · [quiz](weeks/week03-layout/quiz.md) |
 | 4 | Navigation | [notes](weeks/week04-navigation/README.md) · [slides](https://betsegawlemma.github.io/mobile-application-development-course/week04/) · [lab](weeks/week04-navigation/lab/README.md) · [quiz](weeks/week04-navigation/quiz.md) |
-| 5 | State management and architecture | *available before the lecture* |
+| 5 | State management and architecture | [notes](weeks/week05-state-architecture/README.md) · [slides](https://betsegawlemma.github.io/mobile-application-development-course/week05/) · [lab](weeks/week05-state-architecture/lab/README.md) · [quiz](weeks/week05-state-architecture/quiz.md) |
 | 6 | Testing I | *available before the lecture* |
 | 7 | Interactivity | *available before the lecture* |
 | 8 | Local persistence · mid exam | *available before the lecture* |
