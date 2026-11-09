@@ -36,6 +36,9 @@ void main() {
       expect(() => bmiCategory(0), throwsArgumentError);
       expect(() => bmiCategory(-5), throwsArgumentError);
     });
+    test('checking the bmi value',()=> {
+      expect(bmiCategory(25), "Overweight")
+    });
     // TODO(lab): Exercise 3 — before you write bmiCategory, add your own
     // test here for a value exactly on a boundary (for example 25.0).
     // Run it and watch it fail. Show the failing test to the TA at
